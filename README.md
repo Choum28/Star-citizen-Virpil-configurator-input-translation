@@ -8,7 +8,7 @@ The mapping.csv file provided with the script has been set for the following set
 &nbsp;&nbsp;&nbsp;&nbsp; MongoosT-50CM2 Throttle in 5 mode conf (master) + vpc control panel 2 (slave) set as  js2 in star citizen.  
 &nbsp;&nbsp;&nbsp;&nbsp; Virpil Alpha prime joystick set as js1 in star citizen. 
 
-You will need to adapt input values if using different devices/connfiguration.
+You will need to adapt input values if using different devices/configurations.
 
 ## launch the script  
 Open cmd terminal and launch following command:
