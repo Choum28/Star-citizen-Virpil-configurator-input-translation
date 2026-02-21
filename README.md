@@ -2,15 +2,18 @@
 a Powershell Script that will convert starcitizen input xml file created with old virpil mapping from VPC Software to new mapping set by VPC configurator Alpha.
 
 ## Configuration :   
-you need to edit the ps1 file to correctly set different path.   
  
-The mapping.csv file provided with the script has been set for the following setup :   
-&nbsp;&nbsp;&nbsp;&nbsp; MongoosT-50CM2 Throttle in 5 mode conf (master) + vpc control panel 2 (slave) set as  js2 in star citizen.  
-&nbsp;&nbsp;&nbsp;&nbsp; Virpil Alpha prime joystick set as js1 in star citizen. 
+You will need to adapt Joystick instance value to your specific input configuration.
+ <options type="joystick" instance="1" Product="VPC Stick WarBRD  {00D53344-0000-0000-0000-504944564944}"></options>
+ <options type="joystick" instance="2" Product="VPC Throttle MT-50CM2  {01933344-0000-0000-0000-504944564944}"></options>
 
-You will need to adapt input values if using different devices/configurations.
+ VPC Stick WarBRD (Const alpha) will use joystick instance number 1 (JS1)
+ VPC Throttle MT-50CM2 will use joystick instance 2 (JS2)
 
 ## launch the script  
 Open cmd terminal and launch following command:
 
 powershell.exe -ep bypass -file "x:\xxx\virpil_sc_conversion.ps1"
+
+<img width="525" height="484" alt="image" src="https://github.com/user-attachments/assets/97ef67cf-15c7-4918-a8eb-c150b9d0acf2" />
+
