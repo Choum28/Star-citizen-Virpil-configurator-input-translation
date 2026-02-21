@@ -8,9 +8,11 @@
 	The script support following configuration (default Virpil buttons assignement)
 			Virpil Constellation Alpha prime joystick
 			Virpil Constellation Alpha joystick
-			MongoosT-50CM2/3 Throttle
-			MongoosT-50CM2/3 Throttle in 5 mode selection
-	        MongoosT-50CM2/3 Throttle in 5 mode selection (master) with virpil control panel 2 (slave).
+			Virpil CDT Aero Grip
+			Virpil Warbrd-grip
+			MongoosT-50CM2/3 Throttle (no shift and 5 way shift modifier)
+	        MongoosT-50CM2/3 Throttle in 5 way shift modifier (master) with virpil control panel 2 (slave).
+			VMAX Prime Throttle (no shift and 5 way shifter)
 			Control Panel 1
 			Control Panel 2
 	
@@ -37,9 +39,13 @@ Add-Type -AssemblyName System.Drawing
 $VirpilDevice = @(
 "Constellation ALPHA",
 "Constellation ALPHA Prime",
+"CDT Aero Grip",
+"WarBRD Grip",
 "MongoosT-50CM2/3 1 mode",
 "MongoosT-50CM2/3 5 mode selection",
 "MongoosT-50CM2/3 5 mode + Control panel 2 (slave)",
+"VMAX Prime Throttle 1 mode",
+"VMAX Prime Throttle 5 mode",
 "Control Panel 1",
 "Control Panel 2")
 $jsnumberlist = @("js1","js2","js3","js4","js5","js6","js7","js8")
@@ -314,9 +320,13 @@ $btnOK.Add_Click({
 		switch ($global:comboNormales[$i].SelectedItem) {	
 			"Constellation ALPHA" { $csv = "Const_alpha.csv" }
 			"Constellation ALPHA Prime" { $csv = "Const_alpha_prime.csv" }
+			"CDT Aero Grip"  { $csv = "cdt-aero.csv" }
+			"WarBRD Grip"  { $csv = "Warbrd-grip.csv" }
 			"MongoosT-50CM2/3 1 mode" { $csv = "ThrottleCM2-3.csv"}
 			"MongoosT-50CM2/3 5 mode selection" { $csv = "ThrottleCM2-3_5m.csv"}
 			"MongoosT-50CM2/3 5 mode + Control panel 2 (slave)" { $csv = "ThrottleCM2-3_5m_SlaveCP2.csv" }
+			"VMAX Prime Throttle 1 mode" { $csv = "VMAX Prime Throttle.csv" }
+			"VMAX Prime Throttle 5 mode" { $csv = "VMAX Prime Throttle-5m.csv" }
 			"Control Panel 1" { $csv = "CP1.csv" }
 			"Control Panel 2" { $csv = "CP2.csv" }
 		}
