@@ -1,6 +1,19 @@
 # Star-citizen-Virpil-configurator-input-translation
 a Powershell Script that will convert starcitizen input xml file created with old virpil mapping from VPC Software to new mapping set by VPC configurator Alpha.
 
+	The script support following configuration (default Virpil buttons assignement)
+			Virpil Constellation Alpha prime joystick
+			Virpil Constellation Alpha joystick
+			Virpil CDT Aero Grip
+			Virpil Warbrd-grip
+			MongoosT-50CM2/3 Throttle (no shift and 5 way shift modifier)
+	        MongoosT-50CM2/3 Throttle in 5 way shift modifier (master) with virpil control panel 2 (slave).
+			VMAX Prime Throttle (no shift and 5 way shifter)
+			Control Panel 1
+			Control Panel 2
+	
+	Note : Control Panel 3 (standalone) has no buttons assignement change between VPC Configuration and Vpc control configurator.
+
 ## Configuration :   
  
 You will need to adapt Joystick instance value to your specific input configuration.
